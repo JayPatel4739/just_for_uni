@@ -99,6 +99,5 @@ def call_llm(prompt: str) -> str:
     cleaned = re.sub(r".*?</think>\s*", "", text, flags=re.DOTALL)
     return cleaned
 
-
 result = call_llm(prompt="what is the temperature in gandhinagar?")
 print(result)
